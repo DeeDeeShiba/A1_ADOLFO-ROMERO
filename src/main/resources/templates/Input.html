@@ -8,18 +8,18 @@
 
 <h1>Rock Paper Scissors</h1>
 <h2>Pick Rock, Paper or Scissors Below!</h2>
+
 <form action="Output.html" th:action="@{Process}">
     <p>
-        <!--Radio button-->
-        <input type="radio" id="rock" name="option" value="0">
-        <label for="rock">ROCK</label><br>
-        <input type="radio" id="paper" name="option" value="1">
-        <label for="paper">PAPER</label><br>
-        <input type="radio" id="scissors" name="option" value="2">
-        <label for="scissors">SCISSORS</label>
+        <!--Radio Buttons-->
+        <label><input type="radio" name="option" value="0">ROCK</label>
+        <label><input type="radio" name="option" value="2">PAPER</label>
+        <label><input type="radio" name="option" value="0">SCISSORS</label>
+
     </p>
     <p>
-        <input type="submit">
+        <!--Submit Button-->
+        <input type="submit" value="Play!">
     </p>
 </form>
 
