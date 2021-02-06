@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Output</title>
 </head>
 <body>
-<p>
-    <span class = "user_input_label">You Chose:</span>
-    <span th:text="${game.ch}" class="computer_choice"></span>
-
-</p>
+<th:block th:switch="${envelope.option}">
+    <p th:case="0">ROCK</p>
+    <p th:case="1">PAPER</p>
+    <p th:case="3">SCISSORS</p>
+</th:block>
 
 <p>
     <!--Return to input page-->

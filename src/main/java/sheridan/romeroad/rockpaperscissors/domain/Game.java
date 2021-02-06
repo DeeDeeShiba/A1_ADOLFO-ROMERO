@@ -14,6 +14,7 @@ public class Game implements Serializable {
         userChoice = choice;
 
     }
+    public String getOutcome(){return outcome;}
 
     public void decideWinnner() {
         //draw event

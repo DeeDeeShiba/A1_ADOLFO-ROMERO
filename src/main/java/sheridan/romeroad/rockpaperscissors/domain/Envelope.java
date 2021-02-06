@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class Envelope implements Serializable {
 
-    private int option = 1;
+    private int option = 0;
 
     public Envelope(){
 
@@ -19,13 +19,7 @@ public class Envelope implements Serializable {
     }
     public void setOption(int option){ this.option=option; }
 
-    @Override
-    public String toString(){
-        return "Envelope{" +
-        "option=" + option +
-                '}';
 
-    }
 
 
 }
