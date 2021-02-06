@@ -5,11 +5,22 @@
     <title>Output</title>
 </head>
 <body>
-<th:block th:switch="${envelope.option}">
-    <p th:case="0">ROCK</p>
+<h1>Game!</h1>
+
+<p>You Chose:</p>
+<th:block th:switch="${game.userChoice}">
+    <p th:case="*">ROCK</p>
     <p th:case="1">PAPER</p>
-    <p th:case="3">SCISSORS</p>
+    <p th:case="2">SCISSORS</p>
 </th:block>
+
+<p>The Computer Chose:</p>
+<th:block th:switch="${game.computerRandChoice}">
+    <p th:case="*">ROCK</p>
+    <p th:case="1">PAPER</p>
+    <p th:case="2">SCISSORS</p>
+</th:block>
+<h1 th:text="${game.getOutcome()}"></h1>
 
 <p>
     <!--Return to input page-->
